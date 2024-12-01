@@ -1,5 +1,5 @@
 
-<p align="center"><img width="auto" height="60%" src="https://github.com/xiv3r/Kali-Linux-Nethunter/blob/main/kali/kali-minimal.png">
+<p align="center"><img width="1000" height="900" src="https://github.com/xiv3r/Kali-Linux-Nethunter/blob/main/kali/kali-minimal.png">
 </p>
 
 <div align="center">
