@@ -1,0 +1,3 @@
+DISTRO_NAME=""
+TARBALL_URL['aarch64']=""
+TARBAL_SHA256['aarch64']=""
