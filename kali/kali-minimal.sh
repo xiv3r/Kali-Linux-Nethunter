@@ -1,3 +1,3 @@
 DISTRO_NAME="Kali Nethunter Minimal"
 TARBALL_URL['aarch64']=""
-TARBALL_SHA256['aarch64']=""
+TARBALL_SHA256['aarch64']="544d4d9459b8d9d1da680d05cd35a5ca668ca5e2f134e5c68a4ec97117fe821b"
