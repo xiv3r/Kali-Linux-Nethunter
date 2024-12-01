@@ -1,0 +1,17 @@
+#!/bin/sh
+
+cd $PREFIX/etc/proot-distro/
+###
+wget -O https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/kali/kali-full.sh
+###
+wget -O https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/kali/kali-minimal.sh
+###
+wget -O https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/kali/kali-nano.sh
+###
+chmod +x *.sh
+###
+proot-distro list
+###
+echo "
+To install e.g: proot-distro install kali-minimal        
+"
