@@ -1,6 +1,5 @@
 #!/bin/sh
 
-###
 cd $PREFIX/etc/proot-distro/
 ###
 rm -rf *
@@ -17,6 +16,5 @@ echo "
 To install e.g: proot-distro install kali-minimal     
 "
 ###
-sleep 1s
 read -p "Enter a command: " command
 eval "$command"
