@@ -9,8 +9,6 @@ wget https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/mai
 ###
 wget https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/kali/kali-minimal.sh
 ###
-wget https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/kali/kali-nano.sh
-###
 chmod +x *.sh
 ###
 proot-distro list
