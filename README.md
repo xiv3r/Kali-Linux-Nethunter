@@ -30,3 +30,16 @@ apt update && apt upgrade -y && apt install proot wget -y && wget -qO- https://r
 ## To login: 👇
 - user terminal: `nethunter`
 - root terminal: `nethunter -r`
+
+> [!tip]
+> - Kali is not in sudoer fix | user terminal |
+
+```
+nethunter -r
+```
+```
+usermod -aG sudo kali
+```
+```
+echo "kali    ALL=(ALL:ALL) ALL" >>/etc/sudoers
+```
