@@ -7,8 +7,9 @@ Simplified installation of Kali Linux Nethunter in Termux Proot-Distro and Chroo
 # Install kali for Proot-Distro
 > This is the latest custom build rootfs
 ```
-termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && apt install proot-distro wget -y && wget -q https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/kali/install.sh && chmod +x install.sh && sh install.sh
+termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && apt install proot-distro wget -y && wget https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/kali/install.sh && chmod +x install.sh && sh install.sh
 ```
+
 ### Set custom terminal name
 > - must replace `xiv3r` to your name
 ```
@@ -24,12 +25,17 @@ sed -i 's/user=kali/user=xiv3r/' .zshrc && source .zshrc
 
 # Install kali for Chroot
 > This is the official nethunter rootfs
+
+- For Kali Minimal
+> - 187MB file 2GB after extraction
 ```
-apt update && apt upgrade -y && apt install proot wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/installer.sh | sh
+termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && apt install proot-distro wget -y && apt install proot wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/installer.sh | sh
 ```
-- Type:
+
+- For Kali Full
+> - 2GB file 11GB after extraction
 ```
-nethunter -r
+termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && apt install proot-distro wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/kali-full.sh | sh
 ```
 
 ## To login: 👇
