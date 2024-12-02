@@ -4,9 +4,9 @@ echo 'DISTRO_NAME="Parrot Sec"' >> $PREFIX/etc/proot-distro/parrot.sh
 ###
 pd list
 ###
-cd $PREFIX/var/lib/proot-distro/installed-rootfs/
+mkdir -p $PREFIX/var/lib/proot-distro/installed-rootfs/parrot
 ###
-mkdir -p parrot
+cd $PREFIX/var/lib/proot-distro/installed-rootfs/
 ###
 wget https://github.com/xiv3r/Kali-Linux-Nethunter/releases/download/rootfs/parrot-arm64-rootfs.tar.xz
 ###
