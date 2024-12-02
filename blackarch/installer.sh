@@ -1,7 +1,5 @@
 #!/bin/sh
 
-apt install proot proot-distro wget -y
-###
 echo 'DISTRO_NAME="BlackArch Linux"' >> $PREFIX/etc/proot-distro/blackarch.sh
 ###
 pd list
