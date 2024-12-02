@@ -18,6 +18,10 @@ termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--for
 sed -i 's/user=kali/user=xiv3r/' .zshrc && source .zshrc
 ```
 
+<br>
+<br>
+</br>
+
 # Install kali for Chroot
 ```
 apt update && apt upgrade -y && apt install proot wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/installer.sh | sh
