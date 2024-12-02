@@ -11,4 +11,10 @@ tar -xvf kali-nethunter-rootfs-minimal-arm64.tar.xz
 ###
 sleep 1s
 ###
-nethunter
+echo "
+To Login
+
+user terminal: nethunter
+root terminal: nethunter -r
+"
+###
