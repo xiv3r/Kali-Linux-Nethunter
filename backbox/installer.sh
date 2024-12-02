@@ -12,8 +12,6 @@ cd $PREFIX/var/lib/proot-distro/installed-rootfs/
 ###
 wget https://github.com/xiv3r/Kali-Linux-Nethunter/releases/download/rootfs/backbox-arm64-rootfs.tat.xz
 ###
-xz -tf backbox-arm64-rootfs.tat.xz
-###
 tar -xvf backbox-arm64-rootfs.tat.xz -C backbox/
 ###
 echo "
