@@ -7,4 +7,4 @@ wget -O $PREFIX/bin/nethunter https://raw.githubusercontent.com/xiv3r/Kali-Linux
 ###
 chmod 700 $PREFIX/bin/nethunter
 ###
-tar -xf kali-nethunter-rootfs-minimal-arm64.tar.xz
+tar -xvf kali-nethunter-rootfs-minimal-arm64.tar.xz
