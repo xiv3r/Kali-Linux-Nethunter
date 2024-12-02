@@ -1,13 +1,17 @@
 <div align="center">
   
+----------------------  
 # Kali-Linux-Nethunter
+----------------------
 Simplified installation of Kali Linux Nethunter in Termux Proot-Distro and Chroot
 </div>
 
 <div align="center"><img src="https://github.com/xiv3r/Kali-Linux-Nethunter/blob/main/kali/kali.jpeg">
 </div>
 
+-------------------------
 # Install Kali for Chroot
+-------------------------
 > This is the official nethunter rootfs tarball
 --------------------
 ## For Kali Minimal
