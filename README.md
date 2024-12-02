@@ -1,8 +1,6 @@
 <div align="center">
   
-----------------------  
 # Kali-Linux-Nethunter
-----------------------
 Simplified installation of Kali Linux Nethunter in Termux Proot-Distro and Chroot
 </div>
 
@@ -84,12 +82,16 @@ sed -i 's/user=kali/user=xiv3r/' .zshrc && source .zshrc
 
 <br><br><br><br>
 
--------------------------------------
+<div align="center">
+--------------------------------------
 
-# ADDITIONAL PROOT-DISTROS
--------------------------------------
+# ADDITIONAL PROOT PENTESTING DISTRO'S
+--------------------------------------
+</div>
 
+--------------------
 ## For BackBox Linux
+--------------------
 ```
 wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/backbox/installer.sh | sh
 ```
