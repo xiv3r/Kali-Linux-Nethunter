@@ -10,4 +10,4 @@ wget -O /etc/bash.bashrc https://raw.githubusercontent.com/xiv3r/Kali-Linux-Neth
 ###
 wget -O /home/.bashrc https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/homebash.bashrc
 ###
-apr update
+apr update && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y
