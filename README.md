@@ -96,8 +96,15 @@ wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/head
 <p align="center"><img src="https://github.com/xiv3r/Kali-Linux-Nethunter/blob/main/backbox/backbox.png">
 </p>
 
+-----------------------
 ## For Parrot Sec Linux
+-----------------------
+```
+wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/parrot/installer.sh | sh
+````
+<p align="center"><img src="https://github.com/xiv3r/Kali-Linux-Nethunter/blob/main/parrot/parrot.png">
+</p>
 
-
-
+----------------------
 ## For BlackArch Linux
+----------------------
