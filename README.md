@@ -46,9 +46,15 @@ termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--for
 wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/config.sh | sh
 ```
 ## To configure vnc
+> -only for kali full rootfs
 ```
-ethunter -r kex passwd
+nethunter -r kex passwd
 ```
+```
+nethunter -r kex &
+```
+> - Now open the VNC and place kali as name and your VNC Password
+
 ## To login: 👇
 - user terminal: `nethunter`
 - root terminal: `nethunter -r`
