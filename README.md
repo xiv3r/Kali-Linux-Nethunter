@@ -38,8 +38,9 @@ nethunter -r
 
 
 ### Set custom terminal name
-> - replace `xiver` to your name
+> - must replace `xiver` to your name
 ```
 sed -i 's/user=kali/user=xiv3r/' /root/.bashrc
 sed -i 's/user=kali/user=xiv3r/' /home/kali/.bashrc
 ```
+<p align="center"><img width="1000" height="900" src="https://github.com/xiv3r/Kali-Linux-Nethunter/blob/main/chroot/chroot.png">
