@@ -8,14 +8,26 @@ wget -O $PREFIX/bin/nethunter https://raw.githubusercontent.com/xiv3r/Kali-Linux
 ###
 chmod 700 $PREFIX/bin/nethunter
 ###
-tar -xvf kali-nethunter-rootfs-minimal-arm64.tar.xz
+echo "
+checking for tarball errors...
+"
+###
+xz -t kali-nethunter-rootfs-minimal-arm64.tar.xz
+###
+echo "
+Done checking!
+"
+###
+tar -xf kali-nethunter-rootfs-minimal-arm64.tar.xz
+###
+echo "
+errors doesn't affect root file system
+"
 ###
 sleep 1s
 ###
 echo "
 To Login
-
 user terminal: nethunter
 root terminal: nethunter -r
 "
-###
