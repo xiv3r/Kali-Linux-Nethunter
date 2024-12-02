@@ -8,6 +8,6 @@ wget -O .bashrc https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/ref
 ###
 wget -O /etc/bash.bashrc https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/etcbash.bashrc
 ###
-wget -O /home/.bashrc https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/homebash.bashrc
+wget -O /home/kali/.bashrc https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/homebash.bashrc
 ###
 apr update && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y
