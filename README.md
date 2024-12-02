@@ -33,7 +33,7 @@ termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--for
 ```
 wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/config.sh | sh
 ```
-## To configure vnc
+### To configure vnc
 > - only for kali full rootfs
 ```
 nethunter -r kex passwd
@@ -47,7 +47,7 @@ nethunter -r kex &
 127.0.0.1:5901
 ```
 
-## To login: 👇
+### To login: 👇
 - user terminal: `nethunter`
 - root terminal: `nethunter -r`
 - user desktop: `nethunter kex &`
