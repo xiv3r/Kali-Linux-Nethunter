@@ -24,24 +24,34 @@ sed -i 's/user=kali/user=xiv3r/' .zshrc && source .zshrc
 </br>
 
 # Install kali for Chroot
-> This is the official nethunter rootfs
+> This is the official nethunter rootfs file
 
 - For Kali Minimal
 > - 187MB file 2GB after extraction
 ```
-termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && apt install proot-distro wget -y && apt install proot wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/installer.sh | sh
+termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && echo "nethunter -r" >> $PREFIX/etc/bash.bashrc && apt install proot-distro wget -y && apt install proot wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/installer.sh | sh
+```
+- To configure Kali Minimal sudoer
+```
+wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/config.sh | sh
 ```
 
 - For Kali Full
 > - 2GB file 11GB after extraction
 ```
-termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && apt install proot-distro wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/kali-full.sh | sh
+termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && echo "nethunter -r && nethunter -r kex &" >> $PREFIX/etc/bash.bashrc && apt install proot-distro wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/kali-full.sh | sh
 ```
+- To configure Kali Minimal sudoer
+```
+wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/config.sh | sh
+```
+- To configure vnc
+- nethunter kex passwd
+
 
 ## To login: 👇
 - user terminal: `nethunter`
 - root terminal: `nethunter -r`
-
 
 ### Set custom terminal name
 > - must replace `xiver` to your name
