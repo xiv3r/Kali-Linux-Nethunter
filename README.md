@@ -73,3 +73,23 @@ sed -i 's/user=kali/user=xiv3r/' .zshrc && source .zshrc
 
 <p align="center"><img width="1000" height="900" src="https://github.com/xiv3r/Kali-Linux-Nethunter/blob/main/kali/kali-minimal.png">
 </p>
+
+<br><br><br><br>
+
+-------------------------------------
+
+# ADDITIONAL PROOT-DISTROS
+-------------------------------------
+
+## For BackBox Linux
+```
+wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/backbox/installer.sh | sh
+```
+<p align="center"><img src="https://github.com/xiv3r/Kali-Linux-Nethunter/blob/main/backbox/backbox.png">
+</p>
+
+## For Parrot Sec Linux
+
+
+
+## For BlackArch Linux
