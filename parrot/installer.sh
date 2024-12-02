@@ -4,7 +4,7 @@ echo 'DISTRO_NAME="Parrot Sec"' >> $PREFIX/etc/proot-distro/parrot.sh
 ###
 pd list
 ###
-cd $PREFIX/val/lib/proot-distro/installed-rootfs/
+cd $PREFIX/var/lib/proot-distro/installed-rootfs/
 ###
 mkdir -p parrot
 ###
