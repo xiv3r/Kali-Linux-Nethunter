@@ -8,9 +8,10 @@ wget https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/mai
 ###
 proot-distro list
 ###
-echo "
-To install e.g: proot-distro install kali-minimal     
-"
+proot-distro install kali-minimal
+#echo "
+# To install e.g: proot-distro install kali-minimal     
+#"
 ###
-read -p "Enter a command: " command
-eval "$command"
+# read -p "Enter a command: " command
+# eval "$command"
