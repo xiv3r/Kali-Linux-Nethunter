@@ -1,7 +1,3 @@
-
-<p align="center"><img width="1000" height="900" src="https://github.com/xiv3r/Kali-Linux-Nethunter/blob/main/kali/kali-minimal.png">
-</p>
-
 <div align="center">
   
 # Kali-Linux-Nethunter
@@ -17,6 +13,9 @@ termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--for
 ```
 sed -i 's/user=kali/user=xiv3r/' .zshrc && source .zshrc
 ```
+
+<p align="center"><img width="1000" height="900" src="https://github.com/xiv3r/Kali-Linux-Nethunter/blob/main/kali/kali-minimal.png">
+</p>
 
 <br>
 <br>
