@@ -11,6 +11,9 @@ Simplified installation of Kali Linux Nethunter in Termux Proot-Distro and Chroo
 # Install Kali for Chroot
 -------------------------
 > This is the official nethunter rootfs tarball
+
+<br>
+
 --------------------
 ## For Kali Minimal
 --------------------
@@ -22,6 +25,9 @@ termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--for
 ```
 wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/config.sh | sh
 ```
+
+<br><br>
+
 -----------------
 ## For Kali Full
 -----------------
@@ -61,7 +67,7 @@ sed -i 's/user=kali/user=xiv3r/' /home/kali/.bashrc
 ```
 <p align="center"><img width="1000" height="900" src="https://github.com/xiv3r/Kali-Linux-Nethunter/blob/main/chroot/chroot.png">
 
-<br><br><br>
+<br><br><br><br>
 
 -------------------------------
 # Install Kali for Proot-Distro
@@ -89,8 +95,10 @@ sed -i 's/user=kali/user=xiv3r/' .zshrc && source .zshrc
 --------------------------------------
 </div>
 
+<br><br><br><br>
+
 --------------------
-## For BackBox Linux
+# For BackBox Linux
 --------------------
 ```
 wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/backbox/installer.sh | sh
@@ -98,8 +106,10 @@ wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/head
 <p align="center"><img src="https://github.com/xiv3r/Kali-Linux-Nethunter/blob/main/backbox/backbox.png">
 </p>
 
+<br><br><br><br>
+
 -----------------------
-## For Parrot Sec Linux
+# For Parrot Sec Linux
 -----------------------
 ```
 wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/parrot/installer.sh | sh
@@ -107,6 +117,20 @@ wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/head
 <p align="center"><img src="https://github.com/xiv3r/Kali-Linux-Nethunter/blob/main/parrot/parrot.png">
 </p>
 
+<br><br><br><br>
+
 ----------------------
-## For BlackArch Linux
+# For BlackArch Linux
 ----------------------
+```
+wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/blackarch/installer.sh | sh
+```
+<p align="center"><img src="https://github.com/xiv3r/Kali-Linux-Nethunter/blob/main/blackarch/black-arch.png">
+</p>
+
+<br><br><br><br>
+
+---------------------------           
+# For Kali Nethunter based on Debian 12 Bookworm
+---------------------------
+```
