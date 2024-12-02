@@ -27,19 +27,19 @@ sed -i 's/user=kali/user=xiv3r/' .zshrc && source .zshrc
 ```
 apt update && apt upgrade -y && apt install proot wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/installer.sh | sh
 ```
+- Type:
+```
+nethunter -r
+```
+
 ## To login: 👇
 - user terminal: `nethunter`
 - root terminal: `nethunter -r`
 
-> [!tip]
-> - Kali is not in sudoer fix | user terminal |
 
+### Set custom terminal name
+> - replace `xiver` to your name
 ```
-nethunter -r
-```
-```
-usermod -aG sudo kali
-```
-```
-echo "kali    ALL=(ALL:ALL) ALL" >>/etc/sudoers
+sed -i 's/user=kali/user=xiv3r/' /root/.bashrc
+sed -i 's/user=kali/user=xiv3r/' /home/kali/.bashrc
 ```
