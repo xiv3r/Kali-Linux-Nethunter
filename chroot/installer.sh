@@ -18,6 +18,10 @@ echo "
 Done checking!
 "
 ###
+echo "
+extracting rootfs data...
+"
+###
 tar -xf kali-nethunter-rootfs-minimal-arm64.tar.xz
 ###
 echo "
