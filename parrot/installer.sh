@@ -1,1 +1,20 @@
 #!/bin/sh
+
+echo 'DISTRO_NAME="Parrot Sec"' >> $PREFIX/etc/proot-distro/parrot.sh
+###
+pd list
+###
+cd $PREFIX/val/lib/proot-distro/installed-rootfs/
+###
+mkdir -p parrot
+###
+wget https://github.com/xiv3r/Kali-Linux-Nethunter/releases/download/rootfs/parrot-arm64-rootfs.tar.xz
+###
+xz -tf parrot-arm64-rootfs.tar.xz
+###
+tar -xvf parrot-arm64-rootfs.tar.xz -C parrot/
+###
+echo "
+To login Parrot Sec: pd sh parrot
+"
+pd sh parrot
