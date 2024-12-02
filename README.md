@@ -7,10 +7,11 @@ Simplified installation of Kali Linux Nethunter in Termux Proot-Distro and Chroo
 <div align="center"><img src="https://github.com/xiv3r/Kali-Linux-Nethunter/blob/main/kali/kali.jpeg">
 </div>
 
-# Install kali for Chroot
-> This is the official nethunter rootfs file
-
+# Install Kali for Chroot
+> This is the official nethunter rootfs tarball
+--------------------
 ## For Kali Minimal
+--------------------
 > - 187MB file 2GB after extraction
 ```
 termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && echo "nethunter -r kex &" >> $PREFIX/etc/bash.bashrc && apt install proot-distro wget -y && apt install proot wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/installer.sh | sh
@@ -19,8 +20,9 @@ termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--for
 ```
 wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/config.sh | sh
 ```
-
+-----------------
 ## For Kali Full
+-----------------
 > - 2GB file 11GB after extraction
 ```
 termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && echo "nethunter -r kex &" >> $PREFIX/etc/bash.bashrc && apt install proot-distro wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/kali-full.sh | sh
@@ -59,8 +61,10 @@ sed -i 's/user=kali/user=xiv3r/' /home/kali/.bashrc
 
 <br><br><br>
 
-# Install kali for Proot-Distro
-> This is the latest custom build rootfs
+-------------------------------
+# Install Kali for Proot-Distro
+-------------------------------
+> This is the latest custom build rootfs tarball
 ```
 termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && apt install proot-distro wget -y && wget https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/kali/install.sh && chmod +x install.sh && sh install.sh
 ```
