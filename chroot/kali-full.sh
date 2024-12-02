@@ -1,6 +1,7 @@
 #!/bin/sh
 
-apt install proot
+###
+apt install proot proot-distro wget -y
 ###
 wget https://kali.download/nethunter-images/current/rootfs/kali-nethunter-rootfs-full-arm64.tar.xz
 ###
