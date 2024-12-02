@@ -10,8 +10,6 @@ cd $PREFIX/var/lib/proot-distro/installed-rootfs/
 ###
 wget https://github.com/xiv3r/Kali-Linux-Nethunter/releases/download/rootfs/blackarch-rootfs-arm64.tar.xz
 ###
-xz -tf blackarch-rootfs-arm64.tar.xz
-###
 tar -xvf blackarch-rootfs-arm64.tar.xz -C blackarch/
 ###
 echo "
