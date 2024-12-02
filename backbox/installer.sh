@@ -2,7 +2,7 @@
 
 apt install proot proot-distro wget -y
 ###
-echo 'DISTRO_NAME="BackBox Linux"' >> $PREFIX/etc/proot-distro/bacbox.sh
+echo 'DISTRO_NAME="BackBox Linux"' >> $PREFIX/etc/proot-distro/backbox.sh
 ###
 pd list
 ###
