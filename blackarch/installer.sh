@@ -4,9 +4,9 @@ echo 'DISTRO_NAME="BlackArch Linux"' >> $PREFIX/etc/proot-distro/blackarch.sh
 ###
 pd list
 ###
-cd $PREFIX/var/lib/proot-distro/installed-rootfs/
+mkdir -p $PREFIX/var/lib/proot-distro/installed-rootfs/blackarch
 ###
-mkdir -p blackarch
+cd $PREFIX/var/lib/proot-distro/installed-rootfs/
 ###
 wget https://github.com/xiv3r/Kali-Linux-Nethunter/releases/download/rootfs/blackarch-rootfs-arm64.tar.xz
 ###
