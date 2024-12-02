@@ -1,10 +1,11 @@
 <div align="center">
   
 # Kali-Linux-Nethunter
-Simplified installation of Kali Linux Nethunter in Termux Proot-Distro
+Simplified installation of Kali Linux Nethunter in Termux Proot-Distro and Chroot
 </div>
 
 # Install kali for Proot-Distro
+> This is the latest custom build rootfs
 ```
 termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && apt install proot-distro wget -y && wget -q https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/kali/install.sh && chmod +x install.sh && sh install.sh
 ```
@@ -22,6 +23,7 @@ sed -i 's/user=kali/user=xiv3r/' .zshrc && source .zshrc
 </br>
 
 # Install kali for Chroot
+> This is the official nethunter rootfs
 ```
 apt update && apt upgrade -y && apt install proot wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/installer.sh | sh
 ```
