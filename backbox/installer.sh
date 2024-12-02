@@ -6,9 +6,9 @@ echo 'DISTRO_NAME="BackBox Linux"' >> $PREFIX/etc/proot-distro/backbox.sh
 ###
 pd list
 ###
-cd $PREFIX/var/lib/proot-distro/installed-rootfs/
+mkdir -p $PREFIX/var/lib/proot-distro/installed-rootfs/backbox
 ###
-mkdir -p backbox
+cd $PREFIX/var/lib/proot-distro/installed-rootfs/
 ###
 wget https://github.com/xiv3r/Kali-Linux-Nethunter/releases/download/rootfs/backbox-arm64-rootfs.tat.xz
 ###
