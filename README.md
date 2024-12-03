@@ -164,3 +164,5 @@ apt update && apt install proot-distro proot wget -y && wget -qO- https://raw.gi
 ```
 pd sh debkali
 ```
+<p align="center"><img src="https://github.com/xiv3r/Kali-Linux-Nethunter/blob/main/debian/debkali.png">
+</p>
