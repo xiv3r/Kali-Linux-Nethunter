@@ -19,7 +19,7 @@ Simplified installation of Kali Linux Nethunter in Termux Proot-Distro and Chroo
 --------------------
 > - 187MB file 2GB after extraction
 ```
-termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && echo "nethunter -r kex &" >> $PREFIX/etc/bash.bashrc && apt install proot-distro wget -y && apt install proot wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/installer.sh | sh
+termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && echo "nethunter -r kex &" >> $PREFIX/etc/bash.bashrc && apt install proot proot-distro wget -y && apt install proot wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/installer.sh | sh
 ```
 - To configure Kali Minimal sudoer
 ```
@@ -33,7 +33,7 @@ wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/head
 -----------------
 > - 2GB file 11GB after extraction
 ```
-termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && echo "nethunter -r kex &" >> $PREFIX/etc/bash.bashrc && apt install proot-distro wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/kali-full.sh | sh
+termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && echo "nethunter -r kex &" >> $PREFIX/etc/bash.bashrc && apt install proot proot-distro wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/kali-full.sh | sh
 ```
 ### To login: 👇
 - user terminal: `nethunter`
@@ -76,7 +76,7 @@ sed -i 's/user=kali/user=xiv3r/' /home/kali/.bashrc
 
 ## Kali Minimal 
 ```
-termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && apt install proot-distro wget -y && wget https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/kali/install.sh && chmod +x install.sh && sh install.sh
+termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && apt install proot proot-distro wget -y && wget https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/kali/install.sh && chmod +x install.sh && sh install.sh
 ```
 ### To login
 ```
@@ -109,7 +109,7 @@ sed -i 's/user=kali/user=xiv3r/' .zshrc && source .zshrc
 --------------------
 ### Install
 ```
-wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/backbox/installer.sh | sh
+apt update && apt install proot proot-distro wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/backbox/installer.sh | sh
 ```
 ### To login
 ```
@@ -125,7 +125,7 @@ pd sh backbox
 -----------------------
 ### Install
 ```
-wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/parrot/installer.sh | sh
+apt update && apt install proot proot-distro wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/parrot/installer.sh | sh
 ````
 ### To login
 ```
@@ -142,7 +142,7 @@ pd sh parrot
 ### Install
 
 ```
-wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/blackarch/installer.sh | sh
+apt update && apt install proot proot-distro wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/blackarch/installer.sh | sh
 ```
 ### To login
 ```
@@ -158,7 +158,7 @@ pd sh blackarch
 ---------------------------
 ### Install
 ```
-
+apt update && apt install proot-distro proot wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/debian/installer.sh | sh
 ```
 ### To login
 ```
