@@ -73,6 +73,8 @@ sed -i 's/user=kali/user=xiv3r/' /home/kali/.bashrc
 # Install Kali for Proot-Distro
 -------------------------------
 > This is the latest custom build rootfs tarball
+
+## Kali Minimal 
 ```
 termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && apt install proot-distro wget -y && wget https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/kali/install.sh && chmod +x install.sh && sh install.sh
 ```
