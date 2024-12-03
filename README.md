@@ -35,16 +35,16 @@ wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/head
 ```
 termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && echo "nethunter -r kex &" >> $PREFIX/etc/bash.bashrc && apt install proot proot-distro wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/kali-full.sh | sh
 ```
+- To configure Kali Full sudoer
+```
+wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/config.sh | sh
+```
 ### To login: 👇
 - user terminal: `nethunter`
 - root terminal: `nethunter -r`
 - user desktop: `nethunter kex &`
 - root desktop: `nethunter -r kex &`
 
-- To configure Kali Full sudoer
-```
-wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/config.sh | sh
-```
 ### To configure vnc
 > - only for kali full rootfs
 ```
