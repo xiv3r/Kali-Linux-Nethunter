@@ -79,6 +79,7 @@ sed -i 's/user=kali/user=xiv3r/' /home/kali/.bashrc
 termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && apt install proot proot-distro wget -y && wget https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/kali/install.sh && chmod +x install.sh && sh install.sh
 ```
 ### To login
+> - uninstall `pd rm kali-minimal`
 ```
 pd sh kali-minimal
 ```
@@ -112,6 +113,7 @@ sed -i 's/user=kali/user=xiv3r/' .zshrc && source .zshrc
 apt update && apt install proot proot-distro wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/backbox/installer.sh | sh
 ```
 ### To login
+> - uninstall `pd rm backbox`
 ```
 pd sh backbox
 ```
@@ -128,6 +130,7 @@ pd sh backbox
 apt update && apt install proot proot-distro wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/parrot/installer.sh | sh
 ````
 ### To login
+> - uninstall `pd rm parrot`
 ```
 pd sh parrot
 ```
@@ -140,11 +143,11 @@ pd sh parrot
 # For BlackArch Linux
 ----------------------
 ### Install
-
 ```
 apt update && apt install proot proot-distro wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/blackarch/installer.sh | sh
 ```
 ### To login
+> - uninstall `pd rm blackarch`
 ```
 pd sh blackarch
 ```
@@ -161,6 +164,7 @@ pd sh blackarch
 apt update && apt install proot-distro proot wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/debian/installer.sh | sh
 ```
 ### To login
+> - uninstall `pd rm debkali`
 ```
 pd sh debkali
 ```
