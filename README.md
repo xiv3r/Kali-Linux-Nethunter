@@ -35,6 +35,12 @@ wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/head
 ```
 termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && echo "nethunter -r kex &" >> $PREFIX/etc/bash.bashrc && apt install proot-distro wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/kali-full.sh | sh
 ```
+### To login: 👇
+- user terminal: `nethunter`
+- root terminal: `nethunter -r`
+- user desktop: `nethunter kex &`
+- root desktop: `nethunter -r kex &`
+
 - To configure Kali Full sudoer
 ```
 wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/chroot/config.sh | sh
@@ -53,12 +59,6 @@ nethunter -r kex &
 127.0.0.1:5901
 ```
 
-### To login: 👇
-- user terminal: `nethunter`
-- root terminal: `nethunter -r`
-- user desktop: `nethunter kex &`
-- root desktop: `nethunter -r kex &`
-
 ### Set custom terminal name
 > - must replace `xiver` to your name
 ```
@@ -76,7 +76,10 @@ sed -i 's/user=kali/user=xiv3r/' /home/kali/.bashrc
 ```
 termux-setup-storage && apt update && apt full-upgrade -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y && apt install proot-distro wget -y && wget https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/kali/install.sh && chmod +x install.sh && sh install.sh
 ```
-
+### To login
+```
+pd sh kali-minimal
+```
 ### Set custom terminal name
 > - must replace `xiv3r` to your name
 ```
@@ -94,14 +97,21 @@ sed -i 's/user=kali/user=xiv3r/' .zshrc && source .zshrc
 # ADDITIONAL PROOT PENTESTING DISTRO'S
 --------------------------------------
 </div>
+> [!tip]
+> - Type `pd list` to show the list of distros 
 
 <br><br><br><br>
 
 --------------------
 # For BackBox Linux
 --------------------
+### Install
 ```
 wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/backbox/installer.sh | sh
+```
+### To login
+```
+pd sh backbox
 ```
 <p align="center"><img src="https://github.com/xiv3r/Kali-Linux-Nethunter/blob/main/backbox/backbox.png">
 </p>
@@ -111,9 +121,14 @@ wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/head
 -----------------------
 # For Parrot Sec Linux
 -----------------------
+### Install
 ```
 wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/parrot/installer.sh | sh
 ````
+### To login
+```
+pd sh parrot
+```
 <p align="center"><img src="https://github.com/xiv3r/Kali-Linux-Nethunter/blob/main/parrot/parrot.png">
 </p>
 
@@ -122,8 +137,14 @@ wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/head
 ----------------------
 # For BlackArch Linux
 ----------------------
+### Install
+
 ```
 wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/heads/main/blackarch/installer.sh | sh
+```
+### To login
+```
+pd sh blackarch
 ```
 <p align="center"><img src="https://github.com/xiv3r/Kali-Linux-Nethunter/blob/main/blackarch/black-arch.png">
 </p>
@@ -133,4 +154,11 @@ wget -qO- https://raw.githubusercontent.com/xiv3r/Kali-Linux-Nethunter/refs/head
 ---------------------------           
 # For Kali Nethunter based on Debian 12 Bookworm
 ---------------------------
+### Install
+```
+
+```
+### To login
+```
+pd sh debkali
 ```
